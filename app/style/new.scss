@@ -8,6 +8,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     padding: 0;
     border: 0;
     font-size: 100%;
+    font-family:'Microsoft YaHei';
     font: inherit;
     vertical-align: baseline;
 }
@@ -121,3 +122,43 @@ a, div, header, span, input, select {
 
 
 //=============style============//
+.c_wp{
+    width:960px;
+    margin:auto;
+}
+#i_header{
+    width:100%;
+    height:80px;
+}
+#header{
+    height:80px;
+    padding:10px 0;
+    .logo{
+        float:left;
+        a{
+            display:block;
+        }
+    }
+    .nav{
+        float:left;
+        margin: 20px 0 0 30px;
+        li{
+            float:left;
+            margin-right:20px;
+            .zjhf{
+                display:none;     
+            }
+            position:relative;
+            a{
+                font-size:14px;
+            }
+            &.c_goin:hover{
+                .zjhf{
+                    display:block;
+                    position:absolute;
+                    top:20px;
+                }
+            }
+        }
+    }
+}
