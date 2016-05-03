@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==========================================================================
 #CssReset
 ========================================================================== */
@@ -127,20 +128,164 @@ a, div, header, span, input, select {
     float: left; }
     #header .logo a {
       display: block; }
+  #header .head_map {
+    float: right;
+    margin-top: 20px; }
+    #header .head_map a {
+      font-size: 12px;
+      color: #999; }
+    #header .head_map span {
+      color: #999;
+      font-size: 12px; }
   #header .nav {
     float: left;
-    margin: 20px 0 0 30px; }
+    margin: 0 0 0 30px; }
     #header .nav li {
       float: left;
       margin-right: 20px;
       position: relative; }
       #header .nav li .zjhf {
-        display: none; }
-      #header .nav li a {
-        font-size: 14px; }
-      #header .nav li.c_goin:hover .zjhf {
-        display: block;
+        display: none;
+        width: 500px;
+        height: 306px;
+        border: 2px solid #0849AB;
         position: absolute;
-        top: 20px; }
+        top: 70px;
+        left: -40px;
+        border-radius: 10px;
+        background: #fff;
+        padding: 15px 10px; }
+        #header .nav li .zjhf .zj_left {
+          width: 33.3333%;
+          float: left; }
+          #header .nav li .zjhf .zj_left li {
+            line-height: 1.8;
+            float: none; }
+            #header .nav li .zjhf .zj_left li a {
+              display: inline;
+              line-height: 1; }
+        #header .nav li .zjhf .zj_center {
+          width: 33.3333%;
+          float: left; }
+          #header .nav li .zjhf .zj_center li {
+            line-height: 1.8;
+            float: none; }
+            #header .nav li .zjhf .zj_center li a {
+              display: inline;
+              line-height: 1; }
+              #header .nav li .zjhf .zj_center li a:hover {
+                color: #537DBF;
+                text-decoration: underline; }
+        #header .nav li .zjhf .zj_right {
+          width: 33.3333%;
+          float: left; }
+          #header .nav li .zjhf .zj_right li {
+            line-height: 1.8;
+            float: none; }
+            #header .nav li .zjhf .zj_right li a {
+              display: inline;
+              line-height: 1; }
+      #header .nav li a {
+        font-size: 14px;
+        display: block;
+        line-height: 5; }
+      #header .nav li.c_goin:hover .zjhf {
+        display: block; }
+
+.show {
+  height: 435px;
+  overflow: hidden; }
+
+/* 本例子css */
+.slideBox {
+  border-radius: 10px;
+  height: 435px;
+  overflow: hidden;
+  position: relative; }
+
+.slideBox .hd {
+  height: 15px;
+  overflow: hidden;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  z-index: 1; }
+
+.slideBox .hd ul {
+  overflow: hidden;
+  zoom: 1;
+  float: left; }
+
+.slideBox .hd ul li {
+  float: left;
+  margin-right: 2px;
+  width: 15px;
+  height: 15px;
+  line-height: 14px;
+  text-align: center;
+  background: #fff;
+  cursor: pointer; }
+
+.slideBox .hd ul li.on {
+  background: #f00;
+  color: #fff; }
+
+.slideBox .bd {
+  position: relative;
+  height: 100%;
+  z-index: 0; }
+
+.slideBox .bd li {
+  zoom: 1;
+  vertical-align: middle; }
+
+.slideBox .bd img {
+  width: 100%;
+  height: 435px;
+  display: block; }
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.slideBox .prev,
+.slideBox .next {
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  margin-top: -25px;
+  display: block;
+  width: 32px;
+  height: 40px;
+  background: url(images/slider-arrow.png) -110px 5px no-repeat;
+  filter: alpha(opacity=50);
+  opacity: 0.5; }
+
+.slideBox .next {
+  left: auto;
+  right: 3%;
+  background-position: 8px 5px; }
+
+.slideBox .prev:hover,
+.slideBox .next:hover {
+  filter: alpha(opacity=100);
+  opacity: 1; }
+
+.slideBox .prevStop {
+  display: none; }
+
+.slideBox .nextStop {
+  display: none; }
+
+#i_footer .foot_hd {
+  border-bottom: 1px solid #eee; }
+#i_footer .c_jj_left {
+  position: relative; }
+  #i_footer .c_jj_left h3 {
+    font-size: 14px;
+    color: #2663B3; }
+  #i_footer .c_jj_left p {
+    color: #333; }
+  #i_footer .c_jj_left a {
+    position: absolute;
+    bottom: 10px;
+    right: 10px; }
 
 /*# sourceMappingURL=new.css.map */

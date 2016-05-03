@@ -1,6 +1,3 @@
 ;(function($){
-    $('.c_goin').on('mouseover',function(){
-        $('.zjhf').show();
-    })
-
+    $("#slideBox").slide({mainCell:".bd ul",effect:"top",autoPlay:true});
 })(jQuery)
