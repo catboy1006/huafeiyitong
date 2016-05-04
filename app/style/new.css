@@ -274,8 +274,8 @@ a, div, header, span, input, select {
   line-height: 14px;
   text-align: center;
   background: #000;
-  filter: alpha(opacity=70);
-  opacity: 0.7;
+  filter: alpha(opacity=30);
+  opacity: 0.3;
   color: #fff;
   cursor: pointer;
   overflow: hidden; }
@@ -301,6 +301,8 @@ a, div, header, span, input, select {
 
 .slideBox .hd ul li.on {
   background: #336BA9;
+  filter: alpha(opacity=100);
+  opacity: 1;
   color: #fff; }
 
 .slideBox .bd {
