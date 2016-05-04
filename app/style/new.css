@@ -113,6 +113,15 @@ a, div, header, span, input, select {
 .text-left {
   text-align: left; }
 
+.c_icon {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  height: 15px;
+  width: 15px;
+  vertical-align: middle; }
+
 .c_wp {
   width: 960px;
   margin: auto; }
@@ -195,6 +204,8 @@ a, div, header, span, input, select {
 
 .show {
   height: 435px;
+  border: 1px solid #eee;
+  border-radius: 100px 10px 10px 10px;
   overflow: hidden; }
 
 /* 本例子css */
@@ -205,30 +216,48 @@ a, div, header, span, input, select {
   position: relative; }
 
 .slideBox .hd {
-  height: 15px;
   overflow: hidden;
   position: absolute;
-  right: 5px;
+  right: 0px;
+  top: 61px;
   bottom: 5px;
   z-index: 1; }
 
 .slideBox .hd ul {
   overflow: hidden;
   zoom: 1;
-  float: left; }
+  margin-top: 1px; }
 
 .slideBox .hd ul li {
-  float: left;
-  margin-right: 2px;
-  width: 15px;
-  height: 15px;
+  width: 85px;
+  height: 83px;
+  margin-bottom: 1px;
   line-height: 14px;
   text-align: center;
-  background: #fff;
-  cursor: pointer; }
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden; }
+  .slideBox .hd ul li span {
+    width: 30px;
+    display: block;
+    margin: auto;
+    margin-top: 28px;
+    font-size: 12px; }
+
+.slideBox .stop {
+  bottom: 0;
+  right: 0;
+  height: 59px;
+  width: 85px;
+  background: rgba(0, 0, 0, 0.8);
+  line-height: 60px;
+  position: absolute;
+  color: #fff;
+  text-align: center; }
 
 .slideBox .hd ul li.on {
-  background: #f00;
+  background: #336BA9;
   color: #fff; }
 
 .slideBox .bd {
@@ -249,20 +278,24 @@ a, div, header, span, input, select {
 .slideBox .prev,
 .slideBox .next {
   position: absolute;
-  left: 3%;
-  top: 50%;
-  margin-top: -25px;
   display: block;
-  width: 32px;
-  height: 40px;
-  background: url(images/slider-arrow.png) -110px 5px no-repeat;
+  width: 85px;
+  height: 61px;
   filter: alpha(opacity=50);
   opacity: 0.5; }
 
+.slideBox .prev {
+  background: rgba(0, 0, 0, 0.8) url(../images/shang.png) center no-repeat;
+  top: 0;
+  right: 0; }
+
 .slideBox .next {
-  left: auto;
-  right: 3%;
-  background-position: 8px 5px; }
+  background: rgba(0, 0, 0, 0.8) url(../images/xia.png) center no-repeat;
+  bottom: 60px;
+  right: 0; }
+
+.slideBox .next {
+  left: auto; }
 
 .slideBox .prev:hover,
 .slideBox .next:hover {
@@ -288,5 +321,18 @@ a, div, header, span, input, select {
     position: absolute;
     bottom: 10px;
     right: 10px; }
+
+.c_jj {
+  height: 160px; }
+  .c_jj .c_jj_left {
+    width: 380px;
+    margin-right: 10px; }
+
+.c_jj_list {
+  overflow: hidden;
+  zoom: 1; }
+  .c_jj_list li {
+    float: left;
+    margin-right: 10px; }
 
 /*# sourceMappingURL=new.css.map */
