@@ -165,6 +165,7 @@ a, div, header, span, input, select {
                 border:2px solid #0849AB;
                 position:absolute;
                 top:70px;
+                z-index:11;
                 left:-40px;
                 border-radius:10px;
                 background:#fff;
@@ -213,7 +214,7 @@ a, div, header, span, input, select {
             a{
                 font-size:14px;
                 display:block;
-                line-height:5;
+                line-height:3.8;
             }
             &.c_goin:hover{
                 .zjhf{
