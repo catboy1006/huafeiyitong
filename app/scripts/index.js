@@ -18,4 +18,18 @@
         $this.find('ul').show().parent().siblings().find('ul').hide();
         $this.find('.first').addClass('on').parent().siblings().find('.first').removeClass('on');
     })
+
+    //tab
+    function tab(hd,bd){
+        $(bd).children().eq(1).hide();
+        $(hd).on('click','li',function(e){
+            e.stopPropagation();
+            var $this = $(this);
+            var $index= $(this).index();
+            
+            $this.addClass('on').siblings().removeClass('on');
+            $(bd).children().eq($index).show().siblings().hide();
+        }) 
+    }
+    tab('.tab','.tabs')
 })(jQuery)

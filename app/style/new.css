@@ -208,7 +208,7 @@ a, div, header, span, input, select {
           width: 33.3333%;
           height: 100%;
           float: left;
-          border-right: 1px solid #eee;
+          border-right: 1px solid #d6d6d6;
           padding: 0 10px; }
           #header .nav li .zjhf .zj_left li {
             line-height: 1.8;
@@ -229,7 +229,7 @@ a, div, header, span, input, select {
           float: left;
           height: 100%;
           padding: 0 9px;
-          border-right: 1px solid #eee; }
+          border-right: 1px solid #d6d6d6; }
           #header .nav li .zjhf .zj_center ul.two {
             margin-top: 32px; }
           #header .nav li .zjhf .zj_center ul.three {
@@ -387,7 +387,7 @@ a, div, header, span, input, select {
 #i_footer {
   height: 115px; }
   #i_footer .foot_hd {
-    border-bottom: 1px solid #eee; }
+    border-bottom: 1px solid #d6d6d6; }
   #i_footer .c_jj_left {
     position: relative; }
     #i_footer .c_jj_left h3 {
@@ -410,9 +410,9 @@ a, div, header, span, input, select {
     position: relative;
     height: 155px;
     border-radius: 10px;
-    border: 1px solid #eee;
-    box-shadow: 0px 0px 4px #eee;
-    -webkit-box-shadow: 0px 0px 4px #eee; }
+    border: 1px solid #d6d6d6;
+    box-shadow: 0px 0px 4px #d6d6d6;
+    -webkit-box-shadow: 0px 0px 4px #d6d6d6; }
     .c_jj .c_jj_left h3 {
       color: #2862B5;
       font-size: 16px;
@@ -447,8 +447,8 @@ a, div, header, span, input, select {
       margin-right: 10px;
       border-radius: 10px;
       border: 1px solid #D6D6D6;
-      box-shadow: 2px 2px 3px #eee;
-      -webkit-box-shadow: 2px 2px 3px #eee;
+      box-shadow: 2px 2px 3px #d6d6d6;
+      -webkit-box-shadow: 2px 2px 3px #d6d6d6;
       line-height: 55px;
       position: relative; }
       .c_bottom_list ul li a {
@@ -476,7 +476,7 @@ a, div, header, span, input, select {
   width: 100%; }
   #footer .foot_hd {
     font-size: 12px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #d6d6d6;
     color: #999; }
     #footer .foot_hd span {
       margin-left: 8px; }
@@ -559,11 +559,26 @@ a, div, header, span, input, select {
   overflow: hidden;
   zoom: 1; }
   .detail_right .detail_right_title {
-    border: 1px solid #eee;
+    border: 1px solid #d6d6d6;
     border-radius: 10px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    padding: 20px; }
   .detail_right .detail_right_bd {
-    border: 1px solid #eee;
+    border: 1px solid #d6d6d6;
     border-radius: 10px; }
+  .detail_right .half {
+    overflow: hidden; }
+    .detail_right .half li {
+      width: 50%;
+      font-size: 14px;
+      text-align: center;
+      line-height: 48px;
+      border-bottom: 1px solid #d6d6d6;
+      border-left: 1px solid #d6d6d6;
+      position: relative;
+      left: -1px;
+      float: left; }
+      .detail_right .half li.on {
+        border-bottom: none; }
 
 /*# sourceMappingURL=new.css.map */

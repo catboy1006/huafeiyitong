@@ -227,7 +227,7 @@ a, div, header, span, input, select {
                     width:33.3333%;
                     height:100%;
                     float:left;
-                    border-right:1px solid #eee;
+                    border-right:1px solid #d6d6d6;
                     padding:0 10px;
                     li{
                         line-height:1.8;
@@ -253,7 +253,7 @@ a, div, header, span, input, select {
                     float:left;
                     height:100%;
                     padding:0 9px;
-                    border-right:1px solid #eee;
+                    border-right:1px solid #d6d6d6;
                     ul{
                         &.two{
                             margin-top:32px;
@@ -364,7 +364,7 @@ a, div, header, span, input, select {
 #i_footer{
     height:115px;
     .foot_hd{
-        border-bottom:1px solid #eee;
+        border-bottom:1px solid #d6d6d6;
     }    
     .foot_bd{
         
@@ -395,9 +395,9 @@ a, div, header, span, input, select {
         position:relative;
         height:155px;
         border-radius:10px;
-        border:1px solid #eee;
-        box-shadow:0px 0px 4px #eee;
-        -webkit-box-shadow:0px 0px 4px #eee;
+        border:1px solid #d6d6d6;
+        box-shadow:0px 0px 4px #d6d6d6;
+        -webkit-box-shadow:0px 0px 4px #d6d6d6;
         h3{
             color:#2862B5;
             font-size:16px;
@@ -437,8 +437,8 @@ a, div, header, span, input, select {
             margin-right:10px;
             border-radius:10px;
             border:1px solid #D6D6D6;
-            box-shadow:2px 2px 3px #eee;
-            -webkit-box-shadow:2px 2px 3px #eee;
+            box-shadow:2px 2px 3px #d6d6d6;
+            -webkit-box-shadow:2px 2px 3px #d6d6d6;
             line-height:55px;
             position:relative;
             a{
@@ -474,7 +474,7 @@ a, div, header, span, input, select {
     width:100%;
     .foot_hd{
         font-size:12px;
-        border-bottom:1px solid #eee;
+        border-bottom:1px solid #d6d6d6;
         color:#999;
         span{
             margin-left:8px;
@@ -582,12 +582,31 @@ a, div, header, span, input, select {
     overflow:hidden;
     zoom:1;
     .detail_right_title{
-        border:1px solid #eee;
+        border:1px solid #d6d6d6;
         border-radius:10px;
         margin-bottom:15px;
+        padding:20px;
     }
     .detail_right_bd{
-        border:1px solid #eee;
+        border:1px solid #d6d6d6;
         border-radius:10px;
+        
+    }
+    .half{
+        overflow:hidden;
+        li{
+            width:50%;
+            font-size:14px;
+            text-align:center;
+            line-height:48px;
+            border-bottom:1px solid #d6d6d6;
+            border-left:1px solid #d6d6d6;
+            position:relative;
+            left:-1px;
+            float:left;
+            &.on{
+                border-bottom:none;
+            }
+        }
     }
 }
