@@ -582,7 +582,7 @@ a, div, header, span, input, select {
         }
         ul{
             overflow:hidden;
-            padding:10px;
+            padding:10px 20px;
             border-top:1px dashed #C3C6CF;
             background:#F6F7FB;
             display:none;
@@ -594,8 +594,10 @@ a, div, header, span, input, select {
                 &:first-child{
                     border-top:none;
                 }
-                &:hover{
+                &:hover,&.on{
+                    background:url(../images/a15.png) left center no-repeat;
                     a{
+                        color:#3D67AF;
                         text-decoration: none;
                     }
                 }

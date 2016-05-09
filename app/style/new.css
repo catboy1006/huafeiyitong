@@ -559,7 +559,7 @@ a, div, header, span, input, select {
         background: url(../images/b5.png) 150px center no-repeat; }
     .detail_left_ul li ul {
       overflow: hidden;
-      padding: 10px;
+      padding: 10px 20px;
       border-top: 1px dashed #C3C6CF;
       background: #F6F7FB;
       display: none; }
@@ -570,8 +570,11 @@ a, div, header, span, input, select {
         line-height: 30px; }
         .detail_left_ul li ul li:first-child {
           border-top: none; }
-        .detail_left_ul li ul li:hover a {
-          text-decoration: none; }
+        .detail_left_ul li ul li:hover, .detail_left_ul li ul li.on {
+          background: url(../images/a15.png) left center no-repeat; }
+          .detail_left_ul li ul li:hover a, .detail_left_ul li ul li.on a {
+            color: #3D67AF;
+            text-decoration: none; }
 
 .detail_right {
   overflow: hidden;
