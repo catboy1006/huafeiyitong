@@ -21,7 +21,10 @@
 
     //tab
     function tab(hd,bd){
-        $(bd).children().eq(1).hide();
+        $(bd).children().eq(0).show();
+        if($(hd).hasClass('lsyg_list')){
+            $(hd).children().eq(0).addClass('on');
+        }
         $(hd).on('click','li',function(e){
             e.stopPropagation();
             var $this = $(this);
@@ -32,4 +35,5 @@
         }) 
     }
     tab('.tab','.tabs')
+    tab('.lsyg_list','.lsyg_r')
 })(jQuery)
